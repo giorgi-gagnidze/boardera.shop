@@ -10,18 +10,23 @@ const navLinks = [
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-      <div className="container flex items-center justify-between h-16 md:h-20">
+      <div className="container flex items-center justify-between h-20 md:h-24">
         <a href="#hero" className="text-xl md:text-2xl font-extrabold text-secondary tracking-tight">
           Board<span className="text-primary">era</span>
         </a>
 
-        <a href="#hero" className="flex-shrink-0 -mb-2">
-          <img src={logo} alt="Boardera logo" width={48} height={48} className="rounded-full" />
-        </a>
+        <div className="flex flex-col items-center -mb-1">
+          <a href="#hero" className="flex-shrink-0">
+            <img src={logo} alt="Boardera logo" width={44} height={44} className="rounded-full" />
+          </a>
+          <p className="text-[10px] md:text-xs font-semibold text-secondary leading-tight mt-0.5">
+            Your <span className="text-primary">Board</span> Games
+          </p>
+        </div>
 
-        <p className="text-sm md:text-base font-semibold text-secondary max-w-[180px] text-right leading-tight">
-          Your <span className="text-primary">Board</span> Games
-        </p>
+        <a href="#hero" className="text-xl md:text-2xl font-extrabold text-secondary tracking-tight">
+          Board<span className="text-primary">era</span>
+        </a>
       </div>
     </header>
   );
