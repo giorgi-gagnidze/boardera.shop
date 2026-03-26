@@ -37,9 +37,9 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section-padding bg-muted">
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center">Get in Touch</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center">საკონტაქტო ინფორმაცია</h2>
         <p className="mt-3 text-muted-foreground text-center max-w-md mx-auto">
-          We'd love to hear from you. Reach out through any channel below.
+          შესაკვეთად  და კითხვებისთვის დაგვიკავშირდი
         </p>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
