@@ -7,7 +7,7 @@ const HeroSection = () => {
         Board<span className="text-primary">era</span>
       </h1>
       <p className="mt-6 text-lg md:text-xl max-w-xl animate-fade-up text-secondary" style={{ animationDelay: "0.15s" }}>
-        აღმოაჩინე შენი სამაგიდო თამაში ბორდერაზე და იმოგზაურე ემოციების ოკეანეში
+        აღმოაჩინე შენი <span className="text-primary">სამაგიდო</span> თამაში ბორდ<span className="text-primary">ერა</span>ზე და იმოგზაურე ემოციების ოკეანეში
       </p>
       <a
         href="#social"
