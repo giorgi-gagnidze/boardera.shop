@@ -1,10 +1,10 @@
 
 const navLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "Social", href: "#social" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
-];
+{ label: "Home", href: "#hero" },
+{ label: "Social", href: "#social" },
+{ label: "About", href: "#about" },
+{ label: "Contact", href: "#contact" }];
+
 
 const Header = () => {
   return (
@@ -16,9 +16,9 @@ const Header = () => {
 
         <div className="flex flex-col items-center -mb-1">
           <a href="#hero" className="flex-shrink-0">
-            <img src="/lovable-uploads/boardera-logo.png" alt="Boardera logo" width={44} height={44} className="h-11 w-11 object-contain" />
+            <img src="/lovable-uploads/boardera-logo.png" alt="Boardera logo" width={44} height={44} className="h-11 w-11 object-scale-down" />
           </a>
-          <p className="text-[10px] md:text-xs font-semibold text-secondary leading-tight mt-0.5">
+          <p className="text-[10px] font-semibold text-secondary leading-tight mt-0.5 md:text-xs">
             შენი <span className="text-primary">სამაგიდო</span> თამაშები
           </p>
         </div>
@@ -27,8 +27,8 @@ const Header = () => {
           ბორდ<span className="text-primary">ერა</span>
         </a>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Header;
