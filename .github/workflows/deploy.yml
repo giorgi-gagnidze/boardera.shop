@@ -1,40 +1,50 @@
-name: Deploy React/Vite to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # change if your default branch is different
+      - main
+
+permissions:
+  id-token: write
+  contents: write
+  pages: write
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # 1. Checkout the repository
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      # 2. Setup Node.js
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
 
-      # 3. Install dependencies
-      - name: Install dependencies
-        run: npm install
-
-      # 4. Build the Vite project → generates dist/
-      - name: Build
-        run: npm run build
-
-      # 5. Prepare 404.html for SPA routing (optional but recommended)
-      - name: Copy index.html to 404.html
-        run: cp dist/index.html dist/404.html
-
-      # 6. Deploy to GitHub Pages (dist/ folder)
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Vite GitHub Pages Deployer
+        uses: skywarth/vite-github-pages-deployer@v1.5.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          public_base_path: /your-repo-name/
+          build_path: ./dist
+          install_phase_node_env: dev
+          build_phase_node_env: production
+```
+
+---
+
+## Step 3 — Enable GitHub Pages in repo settings
+
+1. Go to your repo on GitHub → **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+3. Save
+
+---
+
+## Step 4 — Push and trigger the workflow
+
+Commit and push the two changed files (`vite.config.ts` and the workflow YAML) to `main`. The Actions workflow will run automatically, build your project, and publish it.
+
+Your site will be live at:
+```
+https://<your-username>.github.io/<your-repo-name>/
