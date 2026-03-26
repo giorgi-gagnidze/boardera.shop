@@ -17,7 +17,7 @@ const Header = () => {
 
         <div className="flex flex-col items-center -mb-1">
           <a href="#hero" className="flex-shrink-0">
-            <img src="/lovable-uploads/069b23f9-7588-4d2f-ae62-c639c7c85ef1/lovable_image-1.png" alt="Boardera logo" width={44} height={44} className="rounded-full" />
+            <img src="/lovable-uploads/72ed6e0d-997e-4481-9581-9300841a90ce.png" alt="Boardera logo" width={44} height={44} className="rounded-full" />
           </a>
           <p className="text-[10px] md:text-xs font-semibold text-secondary leading-tight mt-0.5">
             Your <span className="text-primary">Board</span> Games
