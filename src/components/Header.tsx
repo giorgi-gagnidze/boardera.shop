@@ -12,7 +12,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between h-20 md:h-24">
         <a href="#hero" className="text-xl font-extrabold text-secondary tracking-tight md:text-lg">
-          ბორდ<span className="text-primary">ერა</span>
+          Board<span className="text-primary">era</span>
         </a>
 
         <div className="flex flex-col items-center -mb-1">
@@ -25,7 +25,7 @@ const Header = () => {
         </div>
 
         <a href="#hero" className="text-xl font-extrabold text-secondary tracking-tight md:text-lg">
-          ბორდ<span className="text-primary">ერა</span>
+          Board<span className="text-primary">era</span>
         </a>
       </div>
     </header>

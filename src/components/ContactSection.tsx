@@ -1,17 +1,11 @@
-import { Mail, Phone, MessageCircle, Facebook, Instagram } from "lucide-react";
+import { Mail, MessageCircle, Facebook, Instagram } from "lucide-react";
 
 const contacts = [
   {
     label: "Email",
-    value: "hello@boardera.com",
-    href: "mailto:hello@boardera.com",
+    value: "info@boardera.shop",
+    href: "mailto:info@boardera.shop",
     icon: Mail,
-  },
-  {
-    label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
-    icon: Phone,
   },
   {
     label: "WhatsApp",
@@ -22,13 +16,13 @@ const contacts = [
   {
     label: "Messenger",
     value: "Send a message",
-    href: "https://m.me/boardera",
+    href: "https://m.me/boardera.ge",
     icon: Facebook,
   },
   {
     label: "Instagram",
-    value: "@boardera",
-    href: "https://instagram.com/boardera",
+    value: "@boardera.ge",
+    href: "https://instagram.com/boardera.ge",
     icon: Instagram,
   },
 ];
