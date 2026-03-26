@@ -1,4 +1,4 @@
-import { Mail, Phone, MessageCircle, Facebook, Instagram } from "lucide-react";
+import { Mail, MessageCircle, Facebook, Instagram } from "lucide-react";
 
 const contacts = [
   {
