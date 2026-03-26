@@ -2,12 +2,12 @@ import heroImage from "@/assets/hero-illustration.png";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="section-padding flex flex-col items-center text-center pt-28 pb-24">
+    <section id="hero" className="section-padding flex flex-col items-center text-center pt-28 pb-24 font-bold py-[40px]">
       <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-secondary tracking-tight animate-fade-up">
         Board<span className="text-primary">era</span>
       </h1>
-      <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl animate-fade-up" style={{ animationDelay: "0.15s" }}>
-        Bringing people together, one game at a time. Discover, play, and share the joy of board games.
+      <p className="mt-6 text-lg md:text-xl max-w-xl animate-fade-up text-secondary" style={{ animationDelay: "0.15s" }}>
+        აღმოაჩინე შენი სამაგიდო თამაში ბორდერაზე და იმოგზაურე ემოციების ოკეანეში
       </p>
       <a
         href="#social"
