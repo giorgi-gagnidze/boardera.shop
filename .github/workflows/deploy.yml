@@ -29,22 +29,3 @@ jobs:
           build_path: ./dist
           install_phase_node_env: dev
           build_phase_node_env: production
-```
-
----
-
-## Step 3 — Enable GitHub Pages in repo settings
-
-1. Go to your repo on GitHub → **Settings** → **Pages**
-2. Under **Source**, select **GitHub Actions**
-3. Save
-
----
-
-## Step 4 — Push and trigger the workflow
-
-Commit and push the two changed files (`vite.config.ts` and the workflow YAML) to `main`. The Actions workflow will run automatically, build your project, and publish it.
-
-Your site will be live at:
-```
-https://<your-username>.github.io/<your-repo-name>/
