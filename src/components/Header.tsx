@@ -16,7 +16,7 @@ const Header = () => {
 
         <div className="flex flex-col items-center -mb-1">
           <a href="#hero" className="flex-shrink-0">
-            <img src="/lovable-uploads/boardera-logo.png" alt="Boardera logo" width={44} height={44} className="h-11 w-11 object-contain" />
+            <img src="/lovable-uploads/4ea7f3c6-c6d3-44e6-8a8d-30a3ff049a7a.png" alt="Boardera logo" width={44} height={44} className="h-11 w-11 object-contain" />
           </a>
           <p className="text-[10px] md:text-xs font-semibold text-secondary leading-tight mt-0.5">
             შენი <span className="text-primary">სამაგიდო</span> თამაშები
