@@ -36,7 +36,7 @@ const ContactSection = () => {
           შესაკვეთად  და კითხვებისთვის დაგვიკავშირდი
         </p>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
           {contacts.map((c) => (
             <a
               key={c.label}
